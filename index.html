@@ -14,108 +14,19 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#da532c">
 
+  <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <title>Rohtash Sethi</title>
 
-  <style>
-    body {
-      background-color: #F2F2F2;
-      font-family: "Montserrat", sans-serif;
-    }
-    .container {
-      width: 80%;
-      margin: 70px auto 0;
-    }
-    .container .card {
-      background-color: #ffffff;
-      border-radius: 12px;
-      padding: 24px;
-    }
-
-    .card .dp img {
-        width: 100%;
-        max-width: 270px;
-    }
-
-    @media all and (min-width: 767px) {
-      .container {
-        width: 80%;
-      }
-      header {
-        display: flex;
-        flex-direction: row;
-      }
-      .card .dp {
-        width: 30%;
-        margin-right: 10px;
-      }
-      .card .dp img {
-        width: 270px;
-        max-height: 270px;
-      }
-      .card .bio {
-        padding-left: 22px;
-        width: 70%;
-        display: flex;
-        flex-direction: column;
-        font-size: 18px;
-      }
-      .card .bio .info {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        color: #4F4F4F;
-      }
-      .card .bio .info .name {
-        font-size: 24px;
-        font-weight: 600;
-      }
-      .card .bio .info .role {
-        color: #828282;
-      }
-      .card .bio .info .material-icons {
-        font-size: 18px;
-        margin-right: 16px;
-      }
-      .card .bio .info .email {
-        line-height: 29px;
-        display: flex;
-        align-items: center;
-      }
-      .card .bio .info .phone {
-        display: flex;
-        align-items: center;
-      }
-      .card .bio .summary {
-        padding-top: 36px;
-        display: flex;
-        flex-direction: column;
-        color: #828282;
-      }
-      .content {
-        display: flex;
-      }
-      aside {
-        width: 40%;
-        padding: 36px 36px 36px 0;
-        display: flex;
-        flex-direction: column;
-        gap: 36px;
-      }
-      .aside-right {
-        width: 60%;
-        padding: 36px 0 36px 0
-      }
-    }
-  </style>
+  
 </head>
 
 <body>
   <div class="container">
-    <header class="card intro">
+    <div class="card intro">
       <div class="dp">
         <img src="rs_laptop_emoji.png">
       </div>
@@ -137,47 +48,72 @@
           </div>
         </div>
         <div class="summary">
-          <p>Passionate Web Developer with 5+ years of experience in building & evolving web applications for diverse business industries.</p>
-          <p>Specializes in developing responsive and web accessible Single Page applications using Angular 5/6/7/8, TypeScript, JavaScript, ES6, jQuery, HTML5, CSS3, Bootstrap, GIT. </p>
+          <p>Passionate Web Developer with 5+ years of experience in building & evolving web applications for diverse
+            business industries.</p>
+          <p>Specializes in developing responsive and web accessible Single Page applications using Angular 5/6/7/8,
+            TypeScript, JavaScript, ES6, jQuery, HTML5, CSS3, Bootstrap, GIT. </p>
         </div>
       </div>
-    </header>
-    <div class="content">
+    </div>
+    <div class="prof-details">
       <aside>
-        <article class="skills">
+        <section class="skills">
           <div class="card">
-            <div>Skills</div>
-            <div>Angular <div class="skill-meter"></div></div>
-            <div>TypeScript <div class="skill-meter"></div></div>
-            <div>JavaScript (ES6) <div class="skill-meter"></div></div>
-            <div>HTML <div class="skill-meter"></div></div>
-            <div>CSS <div class="skill-meter"></div></div>
-            <div>Responsive Design <div class="skill-meter"></div></div>
-            <div>Accesibility <div class="skill-meter"></div></div>
+            <hgroup class="card-header">Skills</hgroup>
+            <div class="skill-list">
+              <div class="skill-item">
+                <div class="skill-name">Angular</div>
+                <div class="skill-meter"><div class="meter w-80"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name">TypeScript</div>
+                <div class="skill-meter"><div class="meter w-80"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name">JavaScript (ES6)</div>
+                <div class="skill-meter"><div class="meter w-80"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name">HTML</div>
+                <div class="skill-meter"><div class="meter w-90"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name">CSS</div>
+                <div class="skill-meter"><div class="meter w-90"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name">Responsive Design</div>
+                <div class="skill-meter"><div class="meter w-100"></div></div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-name">Accesibility</div> 
+                <div class="skill-meter"><div class="meter w-100"></div></div>
+              </div>
+            </div>
           </div>
-        </article>
-        <article class="hobbies">
+        </section>
+        <section class="hobbies">
           <div class="card">
-            <div>Hobbies</div>
+            <hgroup>Hobbies</hgroup>
           </div>
-        </article>
+        </section>
       </aside>
-      <div class="aside-right">
+      <main class="aside-right">
         <section class="work-exp">
           <div class="card">
-            <div>Work Exerience</div>
+            <hgroup>Work Exerience</hgroup>
             <article>Nagarro</article>
             <article>Tata Consultancy Services</article>
           </div>
         </section>
-      </div>
+      </main>
     </div>
     <section class="projects">
       <div class="card">
         <div>Projects</div>
       </div>
     </section>
-    
+
   </div>
 </body>
 
