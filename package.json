@@ -23,6 +23,7 @@
     "@tailwindcss/postcss": "^4.1.4",
     "express": "^4.18.2",
     "postcss": "^8.5.3",
+    "remixicon": "^4.6.0",
     "rxjs": "~7.8.0",
     "tailwindcss": "^4.1.4",
     "tslib": "^2.3.0",

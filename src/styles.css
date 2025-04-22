@@ -1,6 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
 @import "tailwindcss";
 
+@import "remixicon/fonts/remixicon.css";
+
+@theme {
+  --default-font-family: "Fira Code", monospace;
+  --color-dark-blue: #01080e;
+  --color-dark-blue-2: #011627;
+  --color-dark-blue-3: #011221;
+  --color-desat-dark-blue: #1e2d3d;
+  --color-desat-very-dark-blue: #1c2b3a;
+  --color-desat-very-dark-blue-2: #263b50;
+  --color-mod-blue: #4d5bce;
+  --color-desat-blue: #607b96;
+  --color-dark-cyan: #3c9d93;
+  --color-soft-cyan: #43d9ad;
+  --color-soft-orange: #fea55f;
+  --color-light-orange: #ffac6b;
+  --color-soft-red: #e99287;
+  --color-soft-voilet: #c98bdf;
+
+  --color-primary: var(--color-dark-blue);
+  --color-secondary: var(--color-desat-blue);
+  --color-line: var(--color-desat-dark-blue);
+
+  --color-btn-primary: var(--color-soft-orange);
+  --color-btn-default: var(--color-desat-very-dark-blue);
+
+  --color-background: var(--color-dark-blue-2);
+  --color-hover: var(--color-dark-blue-3);
+}
+
 @layer base {
 
   :root {
@@ -60,22 +90,18 @@
     color: var(--checkbox-disabled);
     cursor: not-allowed;
   }
-}
 
-@theme {
-  --default-font-family: "Fira Code", monospace;
-  --color-dark-blue: #01080e;
-  --color-dark-blue-2: #011627;
-  --color-dark-blue-3: #011221;
-  --color-desat-dark-blue: #1e2d3d;
-  --color-desat-very-dark-blue: #1c2b3a;
-  --color-desat-very-dark-blue-2: #263b50;
-  --color-mod-blue: #4d5bce;
-  --color-desat-blue: #607b96;
-  --color-dark-cyan: #3c9d93;
-  --color-soft-cyan: #43d9ad;
-  --color-soft-orange: #fea55f;
-  --color-light-orange: #ffac6b;
-  --color-soft-red: #e99287;
-  --color-soft-voilet: #c98bdf;
+  .link {
+    color: var(--color-secondary);
+    padding: 1rem 2rem;
+    border-color: var(--color-line);
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+  }
+
+  body {
+    background-color: var(--color-background);
+    border: 1px solid var(--color-line);
+  }
 }

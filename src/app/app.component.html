@@ -1,12 +1,9 @@
-<h1 class="text-6xl font-bold">Hello world!</h1>
+<div class="flex flex-col justify-between w-full h-dvh bg-background">
+  <app-header></app-header>
 
+  <main class="flex-1 h-[calc(100%-117px)] text-secondary">
+    <router-outlet></router-outlet>
+  </main>
 
-<label class="form-control">
-  <input type="checkbox" name="checkbox" />
-  Checkbox
-</label>
-
-<label class="form-control">
-  <input type="checkbox" name="checkbox-checked" checked />
-  Checkbox - checked
-</label>
+  <app-footer></app-footer>
+</div>

@@ -1,0 +1,46 @@
+<section class="flex h-full overflow-hidden">
+  <aside class="flex flex-col w-76 h-full border-r border-line">
+    <app-accordion [title]="title" [open]="isOpen()">
+      <app-checkbox-group
+        [options]="filters"
+        [selectedValues]="selectedFilters()"
+        (selectedValuesChange)="selectedFilters.set($event)"
+      >
+      </app-checkbox-group>
+    </app-accordion>
+  </aside>
+  <div class="flex-1 flex flex-col h-full">
+    @if (selectedFilterStr(); as selectedFilterStr) {
+
+    <header class="flex border-b border-line">
+      <div class="flex gap-20 py-2.5 px-6 border-r border-line">
+        <span>{{ selectedFilterStr }}</span>
+        <i
+          tabindex="0"
+          role="button"
+          aria-label="clear filters"
+          class="text-2xl cursor-pointer ri-close-fill"
+          (click)="selectedFilters.set([])"
+        ></i>
+      </div>
+    </header>
+    }
+
+    <div class="flex-1 flex gap-10 flex-wrap p-16 max-h-full overflow-auto">
+      @for (project of filteredProjects(); track project.name) {
+      <div>
+        <h2 class="flex gap-5 mb-3.5">
+          <span class="text-mod-blue font-bold">{{ project.name }}</span>
+          <span>// {{ project.name | customCase }}</span>
+        </h2>
+        <app-card
+          [description]="project.description"
+          [image]="project.image"
+          [defaultImage]="defaultImage"
+          [url]="project.url"
+        ></app-card>
+      </div>
+      }
+    </div>
+  </div>
+</section>

@@ -1,1 +1,25 @@
-<p>header works!</p>
+<header class="flex justify-between border-b border-b-line">
+  <div class="flex gap-4">
+    <a class="link w-72" routerLink="/hello"> {{ "Rohtash Sethi" | customCase }}</a>
+
+    <nav class="flex">
+      @for (item of navItems; track item.label; let first = $first) {
+      <a
+        [routerLink]="item.route"
+        routerLinkActive="text-white border-b-3 border-b-soft-orange"
+        class="link border-r"
+        [class.border-l]="first"
+      >
+        {{ item.label | customCase }}
+      </a>
+      }
+    </nav>
+  </div>
+
+  <a
+    routerLink="/contact-me"
+    class="link border-l"
+    routerLinkActive="text-white border-b-3 border-b-soft-orange"
+    >{{ "Contact Me" | customCase }}
+  </a>
+</header>
