@@ -9,14 +9,14 @@ import { Option } from '../../models/option';
 })
 export class CheckboxGroupComponent {
   options = input<Option[]>([]);
-  selectedValues = model<string[]>([]);
+  selectedValues = model<Option[]>([]);
 
-  selectedValuesChange = output<string[]>();
+  selectedValuesChange = output<Option[]>();
 
   toggleCheckbox(option: Option) {
-    const index = this.selectedValues().findIndex(val => val === option.value);
+    const index = this.selectedValues().findIndex(val => val.value === option.value);
     if (index === -1) {
-      this.selectedValues.update(values => [...values, option.value]);
+      this.selectedValues.update(values => [...values, option]);
     } else {
       this.selectedValues.update(values => {
         const clone = structuredClone(values);
@@ -28,6 +28,6 @@ export class CheckboxGroupComponent {
   }
 
   isChecked(option: Option): boolean {
-    return this.selectedValues().includes(option.value);
+    return this.selectedValues().includes(option);
   }
 }

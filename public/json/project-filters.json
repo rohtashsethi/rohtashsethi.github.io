@@ -1,0 +1,42 @@
+[
+  {
+    "label": "Angular",
+    "icon": "ri-angularjs-fill",
+    "value": "angular"
+  },
+  {
+    "label": "React",
+    "icon": "ri-reactjs-fill",
+    "value": "react"
+  },
+  {
+    "label": "Vue",
+    "icon": "ri-vuejs-fill",
+    "value": "vue"
+  },
+  {
+    "label": "Gatsby",
+    "icon": "ri-gatsby-fill",
+    "value": "gatsby"
+  },
+  {
+    "label": "NodeJS",
+    "icon": "ri-nodejs-fill",
+    "value": "nodejs"
+  },
+  {
+    "label": "NestJS",
+    "icon": "ri-nestjs-fill",
+    "value": "nestjs"
+  },
+  {
+    "label": "HTML5",
+    "icon": "ri-html5-fill",
+    "value": "html5"
+  },
+  {
+    "label": "CSS3",
+    "icon": "ri-css3-fill",
+    "value": "css3"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Taegis XDR",
+    "description": "XDR(eXtended Detection & Response) SaaS Platform",
+    "url": "https://ctpx.secureworks.com/",
+    "image": "projects/taegisXDR.webp",
+    "tags": ["angular", "html5", "css3"]
+  },
+  {
+    "name": "CookinGenie",
+    "description": "Personal Chef as a Service E-Commerce Platform",
+    "url": "https://cookingenie.com/",
+    "image": "projects/cookinGenie.webp",
+    "tags": ["angular", "html5", "css3"]
+  },
+  {
+    "name": "Innago",
+    "description": "Property Management SaaS Platform",
+    "url": "https://innago.com/",
+    "image": "projects/innago.webp",
+    "tags": ["react", "html5", "css3"]
+  },
+  {
+    "name": "ThreatSync 2.0",
+    "description": "XDR Service built in Unified Security SaaS Platform",
+    "url": "https://www.watchguard.com/wgrd-products/threatsync-family",
+    "image": "projects/watchguardCloud.webp",
+    "tags": ["angular", "html5", "css3"]
+  },
+  {
+    "name": "Online Banking",
+    "description": "Nedbank Retail Online Banking Platform",
+    "url": "https://secured.nedbank.co.za/",
+    "image": "projects/nedbankOB.webp",
+    "tags": ["angular", "html5", "css3"]
+  }
+]
