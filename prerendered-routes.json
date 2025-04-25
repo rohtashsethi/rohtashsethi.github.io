@@ -1,0 +1,10 @@
+{
+  "routes": {
+    "/about-me": {},
+    "/blogs": {},
+    "/contact-me": {},
+    "/hello": {},
+    "/projects": {},
+    "/talks": {}
+  }
+}
