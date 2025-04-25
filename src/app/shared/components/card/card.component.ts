@@ -16,7 +16,7 @@ export class CardComponent {
   readonly image = input<string>();
   readonly defaultImage = input.required<string>();
   readonly logo = input<string>();
-  readonly url = input<string>('');
+  readonly url = input<string | undefined>();
   readonly description = input<string>();
   readonly linkLabel = input.required<string>();
 

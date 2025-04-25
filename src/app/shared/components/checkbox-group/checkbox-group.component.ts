@@ -28,6 +28,6 @@ export class CheckboxGroupComponent {
   }
 
   isChecked(option: Option): boolean {
-    return this.selectedValues().includes(option);
+    return this.selectedValues().some(selected => selected.value === option.value);
   }
 }

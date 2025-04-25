@@ -1,6 +1,8 @@
 <header class="flex justify-between border-b border-b-line">
   <div class="flex gap-4">
-    <a class="link w-72" routerLink="/hello"> {{ "Rohtash Sethi" | customCase }}</a>
+    <a class="link w-72" routerLink="/hello">
+      {{ "Rohtash Sethi" | customCase }}</a
+    >
 
     <nav class="flex">
       @for (item of navItems; track item.label; let first = $first) {
@@ -16,10 +18,19 @@
     </nav>
   </div>
 
-  <a
-    routerLink="/contact-me"
-    class="link border-l"
-    routerLinkActive="text-white border-b-3 border-b-soft-orange"
-    >{{ "Contact Me" | customCase }}
-  </a>
+  <div class="flex">
+    <button class="link" (click)="toggleTheme()">
+      @if (isDarkTheme()) {
+      <i class="text-2xl ri-sun-fill"></i>
+      } @else {
+      <i class="text-2xl ri-moon-fill"></i>
+      }
+    </button>
+    <a
+      routerLink="/contact-me"
+      class="link border-l"
+      routerLinkActive="text-white border-b-3 border-b-soft-orange"
+      >{{ "Contact Me" | customCase }}
+    </a>
+  </div>
 </header>

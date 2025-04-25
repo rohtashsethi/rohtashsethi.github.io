@@ -13,9 +13,9 @@ export class FooterComponent {
     },
     { icon: 'ri-twitter-x-fill', link: 'https://x.com/rohtashsethi' },
     { icon: 'ri-medium-fill', link: 'https://medium.com/@rohtashsethi' },
-    { icon: 'ri-code-s-slash-fill', link: 'https://dev.to/rohtashsethi' },
-    { icon: 'ri-youtube-fill', link: '' },
-    { icon: 'ri-npmjs-fill', link: 'https://www.npmjs.com/~rohtashsethi' },
+    // { icon: 'ri-code-s-slash-fill', link: 'https://dev.to/rohtashsethi' },
+    // { icon: 'ri-youtube-fill', link: '' },
+    // { icon: 'ri-npmjs-fill', link: 'https://www.npmjs.com/~rohtashsethi' },
   ];
 
   readonly githubUsername = '@rohtashsethi';

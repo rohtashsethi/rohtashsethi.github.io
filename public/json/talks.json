@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Internationalization in Angular",
+    "description": "Unlock Global Reach by adding Multi-lingual support",
+    "slidesUrl": "https://drive.google.com/file/d/1CHPSHnsk8sf1qPjWmXb5njO39XVIUE4j/view?usp=sharing",
+    "image": "talks/ngIndia2024/thumbnail.webp",
+    "tags": ["angular", "i18n", "l10n"],
+    "mode": "offline",
+    "eventType": "conference",
+    "event": "Ng India, 2024",
+    "audience": 500,
+    "demoUrl": "",
+    "sourceCodeUrl": "",
+    "videoUrl": "https://www.youtube.com/watch?v=ZYwLEeZOQ0g"
+  },
+  {
+    "title": "Angular Libraries",
+    "description": "Code to Collaboration: How to start Open Source contribution",
+    "slidesUrl": "https://docs.google.com/presentation/d/1CU7EG0tKy2prxqE19CNDL8W0RPLOOu_DzdAsKX4CRsM/edit?usp=sharing",
+    "image": "talks/devfestChd2024/thumbnail.webp",
+    "tags": ["angular", "libraries", "standalone-api", "signals"],
+    "mode": "offline",
+    "eventType": "conference",
+    "event": "Devfest Chandigarh, 2024",
+    "audience": 500,
+    "demoUrl": "https://ngx-product-gallery.netlify.app/",
+    "sourceCodeUrl": "https://www.npmjs.com/package/ngx-product-gallery",
+    "videoUrl": ""
+  },
+  {
+    "title": "NgRx Signal Store",
+    "description": "State Management with Signal Store in Angular",
+    "slidesUrl": "https://github.com/rohtashsethi/signal-store-todos",
+    "image": "talks/noidaMeetup2025/thumbnail.webp",
+    "tags": ["angular", "signal-store", "ngrx", "signals", "state-management"],
+    "mode": "offline",
+    "eventType": "meetup",
+    "event": "Ng India Noida Meetup, March 2025",
+    "audience": 30,
+    "demoUrl": "",
+    "sourceCodeUrl": "https://github.com/rohtashsethi/signal-store-todos",
+    "videoUrl": ""
+  },
+  {
+    "title": "Frontend Development 101",
+    "description": "How to be a Frontend Developer in 2025",
+    "slidesUrl": "",
+    "image": "",
+    "tags": ["angular", "html5", "css3"],
+    "mode": "offline",
+    "eventType": "hackathon",
+    "event": "Sprint Hacks 3.0, May 2025",
+    "audience": 500,
+    "demoUrl": "",
+    "sourceCodeUrl": "",
+    "videoUrl": ""
+  }
+]

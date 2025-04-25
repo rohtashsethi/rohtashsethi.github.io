@@ -3,11 +3,27 @@
     <a class="link px-3.5 py-3">find me on: </a>
 
     @for (item of socials; track item.icon; let first = $first) {
-    <a [href]="item.link" target="_blank" class="link px-3.5 py-3 border-r" [class.border-l]="first">
-      <i class="text-2xl {{item.icon}}"></i>
+    <a
+      [href]="item.link"
+      target="_blank"
+      class="link px-3.5 py-3 border-r"
+      [class.border-l]="first"
+    >
+      <i class="text-2xl {{ item.icon }}"></i>
     </a>
     }
   </div>
 
-  <a class="link border-l px-3.5 py-3" href="https://github.com/rohtashsethi" target="_blank"> {{githubUsername}} <i class="text-2xl ri-github-fill"></i></a>
+  <p class="flex gap-2 items-center text-secondary">
+    Made with <i class="text-xl ri-heart-3-fill"></i> and
+    <i class="text-xl ri-code-s-slash-fill"></i>
+  </p>
+
+  <a
+    class="link border-l px-3.5 py-3"
+    href="https://github.com/rohtashsethi"
+    target="_blank"
+  >
+    {{ githubUsername }} <i class="text-2xl ri-github-fill"></i
+  ></a>
 </header>

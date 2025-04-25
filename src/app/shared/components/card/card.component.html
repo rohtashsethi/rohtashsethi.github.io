@@ -18,8 +18,10 @@
       <ng-content></ng-content>
       <!-- For custom content inside the card -->
     </div>
-    <a class="cursor-pointer" [href]="url()" target="_blank">
-      <app-button [label]="linkLabel()"></app-button>
-    </a>
+    @if (url(); as url) {
+      <a class="cursor-pointer" [href]="url" target="_blank">
+        <app-button [label]="linkLabel()"></app-button>
+      </a>
+    }
   </div>
 </div>

@@ -13,7 +13,7 @@ export type Variant = 'primary' | 'default' | 'ghost';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ButtonComponent {
-  readonly label = input.required<string>();
+  readonly label = input<string>();
   readonly disabled = input<boolean>(false);
   readonly variant = input<Variant>('default');
 
@@ -22,7 +22,7 @@ export class ButtonComponent {
       case 'primary':
         return 'bg-btn-primary hover:bg-blue-700 text-primary';
       case 'ghost':
-        return 'border-white text-white';
+        return 'border border-white text-white';
       default:
         return 'bg-btn-default hover:bg-desat-very-dark-blue-2 text-white';
     }

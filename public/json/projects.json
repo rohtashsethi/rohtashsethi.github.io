@@ -1,5 +1,12 @@
 [
   {
+    "name": "We Use Angular",
+    "description": "Directory of Companies using Angular",
+    "url": "https://weuseangular.netlify.app/",
+    "image": "projects/weUseAngular.webp",
+    "tags": ["angular", "html5", "css3"]
+  },
+  {
     "name": "Taegis XDR",
     "description": "XDR(eXtended Detection & Response) SaaS Platform",
     "url": "https://ctpx.secureworks.com/",
