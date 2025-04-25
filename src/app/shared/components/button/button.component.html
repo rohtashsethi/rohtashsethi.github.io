@@ -1,0 +1,7 @@
+<button
+  class="{{ variantClass() }} flex gap-2 items-center text-sm rounded-lg px-3.5 py-2.5"
+  [disabled]="disabled()"
+>
+  {{ label() }}
+  <ng-content></ng-content>
+</button>

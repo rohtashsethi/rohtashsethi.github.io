@@ -1,0 +1,27 @@
+<div
+  class="border border-line rounded-2xl shadow-lg bg-dark-blue-3 transition hover:shadow-xl w-96"
+>
+  @if (finalImage(); as finalImage) {
+  <img
+    [src]="finalImage"
+    alt="Project image"
+    class="w-96 h-36 object-cover rounded-t-2xl mb-4"
+  />
+  }
+
+  <div class="p-6">
+    <div class="mb-6">
+      @if (description(); as description) {
+      <p class="text-desat-blue text-lg">{{ description }}</p>
+      }
+
+      <ng-content></ng-content>
+      <!-- For custom content inside the card -->
+    </div>
+    @if (url(); as url) {
+      <a class="cursor-pointer" [href]="url" target="_blank">
+        <app-button [label]="linkLabel()"></app-button>
+      </a>
+    }
+  </div>
+</div>
